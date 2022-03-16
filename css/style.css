@@ -82,11 +82,13 @@ body{
 #home::before{
     content: "";
     position: absolute;
+    top: 0;
+    left: 0;
     background:url(https://expertphotography.b-cdn.net/wp-content/uploads/2019/01/brooke-lark-158017-unsplash-1500-1-1024x767.jpg) no-repeat center center/cover;
-    height: 100%;
+    height: 450px;
     width: 100%;
     z-index: -1;
-    opacity: 9;
+    opacity: 0.9;
 }
 
 #home h1, #home p{
@@ -114,4 +116,116 @@ body{
 .h-primary{
     font-size: 2.4rem;
     padding: 15px;
+}
+
+.h-secondary{
+    text-align: center;
+}
+
+.center{
+    align-items: center;
+    justify-content: center;
+}
+
+/* Services Section */
+
+.service-container{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+#services{
+    margin: 34px;
+    display: flex;
+}
+
+#services .box{
+    background-color: white;
+    border: 1px solid hotpink;
+    border-radius: 25px;
+    margin: 4px 20px;
+}
+
+#services .box img{
+    height: 100px;
+    margin: 20px auto;
+    display: block;
+}
+
+#services h1,#services p, #sevices img{
+    margin: 10px;
+    padding: 30px 4px;
+}
+
+
+/* Clients */
+.client-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: url(https://www.tuvsud.com/en/-/media/global/images/industries/consumer-products-and-retail/food/ss-1075259726-food.jpg?pid=dc6919b3-e0ca-42d2-b9d1-6e1fa5b90d31) no-repeat center center/cover;
+    color: white;
+    text-shadow: 1px 1px hotpink;
+}
+
+#clients{
+    display: flex;
+}
+
+#clients .items img{
+    height: 150px;
+    padding: 34px;
+}
+
+
+/* Contact */
+#contact{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    margin-top: 30px;
+}
+
+
+#contact-box form{
+    display: flex;
+    flex-direction: column;
+    height: 400px;
+    align-items: center;
+    justify-content: center;
+}
+
+#contact-box label{
+    font-size: 1.2rem;
+}
+
+#contact-box input{
+    margin: 10px;
+    border-radius: 15px;
+    padding: 5px 15px;
+    border: 1px solid hotpink;
+    width: 250px;
+    outline: none;
+}
+
+#contact-box textarea{
+    border-radius: 15px;
+    margin-top: 5px;
+    border: 1px solid hotpink;
+    outline: none;
+    font-size: 1.2rem;
+}
+
+
+
+/* Footer */
+footer{
+    background-color: hotpink;
+    color: white;
+    padding: 20px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }

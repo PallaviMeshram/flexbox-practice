@@ -125,6 +125,7 @@ body{
 .center{
     align-items: center;
     justify-content: center;
+    text-align: center;
 }
 
 /* Services Section */
@@ -160,13 +161,26 @@ body{
 
 /* Clients */
 .client-container{
+    position: relative;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background: url(https://www.tuvsud.com/en/-/media/global/images/industries/consumer-products-and-retail/food/ss-1075259726-food.jpg?pid=dc6919b3-e0ca-42d2-b9d1-6e1fa5b90d31) no-repeat center center/cover;
+    
     color: white;
     text-shadow: 1px 1px hotpink;
+}
+
+.client-container::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    background: url(https://www.tuvsud.com/en/-/media/global/images/industries/consumer-products-and-retail/food/ss-1075259726-food.jpg?pid=dc6919b3-e0ca-42d2-b9d1-6e1fa5b90d31) no-repeat center center/cover;
+    height: 300px;
+    width: 100%;
+    z-index: -2;
+    opacity: 0.8;
 }
 
 #clients{
@@ -180,44 +194,45 @@ body{
 
 
 /* Contact */
-#contact{
+#contact:not(.label){
     display: flex;
-    justify-content: center;
-    text-align: center;
     flex-direction: column;
     margin-top: 30px;
 }
 
+#contact-box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 34px;
+    
+
+}
 
 #contact-box form{
-    display: flex;
-    flex-direction: column;
-    height: 400px;
-    align-items: center;
-    justify-content: center;
+    width:40%;
+    padding: 15px;
+    background-color: white;
+    border-radius: 15px;
+}
+#contact-box .btn{
+    display: block;
+    margin: 0 auto;
 }
 
 #contact-box label{
-    font-size: 1.2rem;
+    margin: 20px;
 }
 
-#contact-box input{
+#contact-box input,
+#contact-box textarea{
     margin: 10px;
     border-radius: 15px;
-    padding: 5px 15px;
+    padding: 15px 15px;
     border: 1px solid hotpink;
-    width: 250px;
+    width: 90%;
     outline: none;
 }
-
-#contact-box textarea{
-    border-radius: 15px;
-    margin-top: 5px;
-    border: 1px solid hotpink;
-    outline: none;
-    font-size: 1.2rem;
-}
-
 
 
 /* Footer */

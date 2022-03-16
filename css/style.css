@@ -67,4 +67,51 @@ body{
 
 /* Home */
 
+#home{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 400px;
+    justify-content: center;
+    text-shadow: 1px 1px hotpink,
+                3px 3px 2px hotpink;
+    color: white;
+    
+}
 
+#home::before{
+    content: "";
+    position: absolute;
+    background:url(https://expertphotography.b-cdn.net/wp-content/uploads/2019/01/brooke-lark-158017-unsplash-1500-1-1024x767.jpg) no-repeat center center/cover;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 9;
+}
+
+#home h1, #home p{
+    background-color: rgba(107, 98, 98, 0.185);
+    border-radius: 15px;
+    padding: 3px 7px;
+    margin: 5px;
+}
+
+.btn{
+    padding: 14px 16px;
+    margin: 15px;
+    font-weight: bold;
+    border: 2px solid white;
+    border-radius: 25px;
+    background: rgb(253, 152, 203);
+    color: white;
+}
+
+.btn:hover{
+    background-color: hotpink;
+    cursor: pointer;
+}
+
+.h-primary{
+    font-size: 2.4rem;
+    padding: 15px;
+}
